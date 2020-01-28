@@ -1,0 +1,109 @@
+/*COLORS 
+
+FOR SECTION BACKGROUND #f9f5fb
+FOR BUTTONS #7a3a95
+*/
+
+
+/*basic reset */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------TYPOGRAPHY---------------------*/
+html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 62.5%;
+    color: white;
+    background-color: #f9f5fb;
+    padding: 2rem;
+}
+
+/*-----------------------REUSABLE COMPONENTS--------------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------HEADER---------------------------------------*/
+.header{
+    background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(./img/jesus-kiteque-wn-KYaHwcis-unsplash\ \(1\).jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero-text-box{
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*-------------HEADINGS-----------------------------------------------------------*/
+.heading-primary{
+    font-size: 480%;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin:0;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 2px;;
+    margin-bottom: 2rem;
+}
+
+/*------------BUTTONS-------------------------*/
+.btn:link,
+.btn:visited{
+    display: inlne-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 300;
+    font-size: 2rem;
+    border-radius: 200px;
+    transition: all .3s;
+}
+.btn-full:link,
+.btn-full:visited{
+    color: #7a3a95;
+    border: 1px solid #7a3a95;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color:#7a3a95;
+    border: 1px solid #7a3a95;
+    color:#fff;
+}
+
+/*-----------------NAVIGATION----------*/
+.nav-list{
+    float: right;
+    list-style: none;
+    margin-top: 6rem;
+}
+.nav-item{
+    display: inline-block;
+}
+.nav-item:not(:last-child){
+    margin-right: 4rem;
+}
+.nav-link:link,
+.nav-link:visited{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 0;
+    border-bottom:2px solid transparent;
+    transition: border-bottom .3s;
+}
+.nav-link:hover,
+.nav-link:active{
+    border-bottom: 2px solid #7a3a95;
+}
