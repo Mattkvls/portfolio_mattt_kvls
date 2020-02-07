@@ -1,0 +1,21 @@
+/*big tablet to 1200px. our row is 1140px */
+@media only screen and (max-width:1200px){
+
+}
+/*will apply 768px -1023px. landscape view ipad 1024px */
+@media only screen and (max-width:1023px){
+
+}
+
+/*will apply 481px - 767px the width of ipad 768. all the phones smaller than the ipad*/
+@media only screen and (max-width:767px){
+
+}
+
+/*small phones 0-480px small iphones*/
+@media only screen and (max-width:480px){
+
+}
+
+
+

@@ -18,8 +18,8 @@ html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 62.5%;
-    color: white;
-    background-color: #f9f5fb;
+    color: #555;
+    background-color: #fff;
     padding: 2rem;
 }
 
@@ -28,7 +28,14 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
-
+/* .long-copy{
+    line-height: 145%;
+    width: 75%;
+    margin-left: 15%;
+} */
+.box{
+    padding: 1%;
+}
 /*-----------------------------------HEADER---------------------------------------*/
 .header{
     background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(./img/jesus-kiteque-wn-KYaHwcis-unsplash\ \(1\).jpg);
@@ -44,22 +51,60 @@ html{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+.name-color{
+    color: #7a3a95;
+}
 /*-------------HEADINGS-----------------------------------------------------------*/
-.heading-primary{
-    font-size: 480%;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.heading-primary{
+    font-size: 480%;
+    letter-spacing: 1px;
     margin:0;
     color: #fff;
-    letter-spacing: 1px;
     word-spacing: 2px;;
     margin-bottom: 2rem;
 }
+.heading-secondary{
+    letter-spacing: 1px;
+    font-size: 360%;
+    word-spacing: 2px;
+    text-align: center;
+}
+.heading-secondary::after{
+    content: " ";
+    display: block;
+    width: 10rem;
+    height: 2px;
+    background-color: #7a3a95;
+    margin: 0 auto;
+    margin-top:3rem;
+}
+.heading-tertiary{
+    font-size: 150%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
 
+/*-------PARAGRAPH-----------------------------*/
+p{
+    font-size: 180%;
+    line-height: 145%;
+}
+.icon{
+    display: block;
+    color: #7a3a95;
+}
 /*------------BUTTONS-------------------------*/
 .btn:link,
-.btn:visited{
+.btn:visited,
+.image-links:link,
+input[type=submit]{
     display: inlne-block;
     text-decoration: none;
     padding: 10px 30px;
@@ -69,12 +114,15 @@ html{
     transition: all .3s;
 }
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+.image-links:link,
+input[type=submit]{
     color: #7a3a95;
     border: 1px solid #7a3a95;
 }
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]{
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
     color:#fff;
@@ -107,3 +155,136 @@ html{
 .nav-link:active{
     border-bottom: 2px solid #7a3a95;
 }
+
+/*-------------ABOUT-----------------------------------*/
+.section-about{
+    padding: 8rem 0;
+    background-color: #fff;
+}
+.profile-box{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+.profile-pic{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 15rem;
+    /* border-radius: 50%; */
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.profile-description{max-width: 75ch;}
+/* li:last-child{margin-bottom: 2rem;} */
+
+.technologies{
+    font-size: 180%;
+    margin: 2rem 0;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.tech-descripton{
+    font-size: 100%;
+}
+
+/*------------------PORTFOLIO---------------------------------*/
+.section-portfolio{
+    padding: 8rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.project{/*is the entire box*/
+    margin-top: 3rem;
+}
+.project__box{/*includes image and button's box*/
+    position: relative;
+}
+.image__buttons-box{/*the box of the buttons*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,0%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.project__box:hover .image__buttons-box{
+    backface-visibility: hidden;
+    transform:translate(-50%,-70%);
+    opacity: 1;
+}
+
+.project__box:hover .project__img{
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+}
+.project__img{
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+.image-links:link,
+.image-links:visited{
+    display:block;
+    margin-bottom: 2rem;
+    background-color:#7a3a95;
+    border: 1px solid #7a3a95;
+    color:#fff;
+}
+/*---------CONTACT-----------------*/
+.section-contact{
+    padding: 8rem 0;
+}
+.form{
+    margin: 2rem auto;
+    width:60%;
+    font-size: 180%;
+    /* text-align: center; */
+}
+input[type=text],
+input[type=email],
+textarea{
+    font-size: inherit;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc; 
+}
+textarea{
+    height: 10rem;
+}
+*:focus{outline: none;}
+
+/*-------FOOTER-------------------*/
+.footer{
+    padding: 4rem 0;
+    background: #020102;
+    font-size: 90%;
+    color: #ddd;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-links{
+    list-style-type: none;
+}
+.social-links li{
+    display: inline-block;
+    margin-bottom: -2rem;
+    margin-right: 2rem;
+}
+.social-links li a:link,
+.social-links li a:visited,
+.social-links li a:active{
+    transition: all 0.2s;
+}
+
+.social-links li a:hover{
+    transform: translateY(-100px);
+}
+

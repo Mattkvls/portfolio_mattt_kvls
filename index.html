@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">    
+    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">    
+
     <title>Matt Katsivelis | Frontend Developer</title>
 </head>
 <body>
@@ -22,10 +24,134 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1 class="heading-primary">Hello, I'm Matt.<br>I'm a Junior Frontend Developer.</h1>
+            <h1 class="heading-primary">Hello, I'm <span class="name-color">Matt katsivelis</span>.<br>I'm a Junior Frontend Developer.</h1>
             <a href="#" class="btn btn-full">learn more</a>
         </div>
     </header>
-    
+    <section class="section-about">
+        <div class="row">
+            <h2 class="heading-secondary">About</h2>
+        </div>
+        <div class="row">
+            <div class="profile-box">
+                <img class="profile-pic" src="./resources/img/me.jpeg" alt="profile picture">
+              <p class="profile-description">I'm a selft taught front end developer with passion for clean and modern design. Being highly self-motivated, I have utilized many online sources including learning platforms like Udemy, Treehouse to acquire the fundamental knowledge for building websites. Untill now my main focus was HTML, CSS, JS and Bootstrap but I'm interested in learning React and bring to life interesting ideas and projects.I am currently seeking for job opportunities in the web development field.
+              </p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="technologies">
+                <div class="col span-1-of-3">
+                    <ion-icon size="large" name="speedometer"></ion-icon>
+                    <h3 class="heading-tertiary">fast</h3>
+                    <p class="tech-descripton">
+                        Fast load times and lag free.
+                    </p>
+                </div>
+                <div class="col span-1-of-3">
+                    <ion-icon size="large" name="tablet-portrait"></ion-icon>
+                    <h3 class="heading-tertiary">responsive</h3>
+                    <p class="tech-descripton">
+                        Layouts that work on any device.
+                    </p>
+                </div>
+                <div class="col span-1-of-3">
+                    <ion-icon size="large" name="star"></ion-icon>
+                    <h3 class="heading-tertiary">modern</h3>
+                    <p class="tech-descripton">
+                        Clean and modern design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-portfolio">
+        <div class="row">
+            <h2 class="heading-secondary">
+                Portfolio
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 port-box">
+                <div class="project">
+                    <div class="project__box">
+                        <img src="./resources/img/Screenshot 2020-02-05 at 23.53.52.png" alt="project photo" class="project__img">
+                        <div class="image__buttons-box">
+                            <a href=""class="btn image-links">View code</a>
+                            <a href="" class="btn image-links">Live</a>
+                        </div>
+                        <h3 class="heading-tertiary ">NASA PROJECT</h3>
+                        <p class="project-text">I have used AJAX and blah blah blha nsectetur adipisicing elit.</p>
+                    </div>
+                    <!-- <div class="project__text-box">
+                    </div> -->
+                </div>
+            </div>
+            <div class="col span-1-of-2 port-box">
+                <!-- here will go the other project -->
+            </div>
+        </div>
+    </section>
+    <section class="section-contact">
+        <div class="row">
+            <h2 class="heading-secondary">
+                contact
+            </h2>
+        </div>
+        <div class="row">
+            <form class="form" action="">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Your name please</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" id="name" name="name" placeholder="Enter name" reuired>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Your email please</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" id="email" placeholder="Enter email" name="name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="text">Your message</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                      <label for="submit">&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                      <input type="submit" value="Submit" id="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="row">
+                <ul class="social-links">
+                    <li class="footer">
+                        <a href="https://github.com/Mattkvls" target="new">
+                            <ion-icon size="large" name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/matthaios-katsivelis-840abb74/" target="new">
+                            <ion-icon  size="large" name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">Copyright © 2020 by Matt Katsivelis.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
 </body>
 </html>
