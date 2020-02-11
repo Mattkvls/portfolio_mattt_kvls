@@ -28,7 +28,7 @@
             <a href="#" class="btn btn-full">learn more</a>
         </div>
     </header>
-    <section class="section-about">
+    <section class="section section-about">
         <div class="row">
             <h2 class="heading-secondary">About</h2>
         </div>
@@ -41,31 +41,37 @@
         </div>
         <div class="row">
             <div class="technologies">
-                <div class="col span-1-of-3">
-                    <ion-icon size="large" name="speedometer"></ion-icon>
-                    <h3 class="heading-tertiary">fast</h3>
-                    <p class="tech-descripton">
-                        Fast load times and lag free.
-                    </p>
+                <div class="feature-box">
+                    <div class="col span-1-of-3">
+                        <ion-icon size="large" name="speedometer"></ion-icon>
+                        <h3 class="heading-tertiary">fast</h3>
+                        <p class="tech-descripton">
+                            Fast load times and lag free.
+                        </p>
+                    </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <ion-icon size="large" name="tablet-portrait"></ion-icon>
-                    <h3 class="heading-tertiary">responsive</h3>
-                    <p class="tech-descripton">
-                        Layouts that work on any device.
-                    </p>
+                <div class="feature-box">
+                    <div class="col span-1-of-3">
+                        <ion-icon size="large" name="tablet-portrait"></ion-icon>
+                        <h3 class="heading-tertiary">responsive</h3>
+                        <p class="tech-descripton">
+                            Layouts that work on any device.
+                        </p>
+                    </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <ion-icon size="large" name="star"></ion-icon>
-                    <h3 class="heading-tertiary">modern</h3>
-                    <p class="tech-descripton">
-                        Clean and modern design.
-                    </p>
+                <div class="feature-box">
+                    <div class="col span-1-of-3">
+                        <ion-icon size="large" name="star"></ion-icon>
+                        <h3 class="heading-tertiary">modern</h3>
+                        <p class="tech-descripton">
+                            Clean and modern design.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-portfolio">
+    <section class="section section-portfolio">
         <div class="row">
             <h2 class="heading-secondary">
                 Portfolio
@@ -80,8 +86,10 @@
                             <a href=""class="btn image-links">View code</a>
                             <a href="" class="btn image-links">Live</a>
                         </div>
-                        <h3 class="heading-tertiary ">NASA PROJECT</h3>
-                        <p class="project-text">I have used AJAX and blah blah blha nsectetur adipisicing elit.</p>
+                        <div class="project__text-box">
+                            <h3 class="heading-tertiary">NASA PROJECT</h3>
+                            <p class="project-text">I have used AJAX and blah blah blha nsectetur adipisicing elit.</p>
+                        </div>
                     </div>
                     <!-- <div class="project__text-box">
                     </div> -->
@@ -92,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="section-contact">
+    <section class="section section-contact">
         <div class="row">
             <h2 class="heading-secondary">
                 contact
@@ -135,17 +143,17 @@
             </form>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer-section">
         <div class="row">
                 <ul class="social-links">
-                    <li class="footer">
+                    <li class="footer-item">
                         <a href="https://github.com/Mattkvls" target="new">
-                            <ion-icon size="large" name="logo-github"></ion-icon>
+                            <ion-icon class="footer-icons" name="logo-github"></ion-icon>
                         </a>
                     </li>
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.linkedin.com/in/matthaios-katsivelis-840abb74/" target="new">
-                            <ion-icon  size="large" name="logo-linkedin"></ion-icon>
+                            <ion-icon  class="footer-icons"name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
                 </ul>
@@ -153,5 +161,8 @@
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.js"></script>
 </body>
 </html>

@@ -17,22 +17,18 @@ FOR BUTTONS #7a3a95
 html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 62.5%;
+    font-size: 62.5%; /*10 px*/
     color: #555;
     background-color: #fff;
-    padding: 2rem;
 }
 
 /*-----------------------REUSABLE COMPONENTS--------------*/
+.section{padding: 80px 0;}
 .row{
     max-width: 1140px;
     margin: 0 auto;
 }
-/* .long-copy{
-    line-height: 145%;
-    width: 75%;
-    margin-left: 15%;
-} */
+
 .box{
     padding: 1%;
 }
@@ -68,27 +64,27 @@ html{
     margin:0;
     color: #fff;
     word-spacing: 2px;;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 .heading-secondary{
     letter-spacing: 1px;
     font-size: 360%;
     word-spacing: 2px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .heading-secondary::after{
     content: " ";
     display: block;
-    width: 10rem;
+    width: 100px;
     height: 2px;
     background-color: #7a3a95;
     margin: 0 auto;
-    margin-top:3rem;
+    margin-top:30px;
 }
 .heading-tertiary{
-    font-size: 150%;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 200%;
+    margin-bottom: 10px;
 }
 
 /*-------PARAGRAPH-----------------------------*/
@@ -100,16 +96,22 @@ p{
     display: block;
     color: #7a3a95;
 }
+.icons-footer{
+    font-size: 400%;
+    display: block; 
+    color: #7a3a95;
+    margin-bottom: 30px;
+}
+
 /*------------BUTTONS-------------------------*/
 .btn:link,
 .btn:visited,
-.image-links:link,
-input[type=submit]{
+.image-links:link{
     display: inlne-block;
     text-decoration: none;
     padding: 10px 30px;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 200%;
     border-radius: 200px;
     transition: all .3s;
 }
@@ -132,18 +134,18 @@ input[type=submit]{
 .nav-list{
     float: right;
     list-style: none;
-    margin-top: 6rem;
+    margin-top: 55px;
 }
 .nav-item{
     display: inline-block;
 }
 .nav-item:not(:last-child){
-    margin-right: 4rem;
+    margin-right: 40px;
 }
 .nav-link:link,
 .nav-link:visited{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 180%;
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;
@@ -158,7 +160,6 @@ input[type=submit]{
 
 /*-------------ABOUT-----------------------------------*/
 .section-about{
-    padding: 8rem 0;
     background-color: #fff;
 }
 .profile-box{
@@ -168,18 +169,22 @@ input[type=submit]{
 }
 .profile-pic{
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    height: 15rem;
+    height: 150px;
     /* border-radius: 50%; */
-    margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
-.profile-description{max-width: 75ch;}
-/* li:last-child{margin-bottom: 2rem;} */
-
+.profile-description{
+    max-width: 75ch;
+    margin-bottom: 15px;
+}
+.feature-box{
+    margin-top: 15px;
+}
 .technologies{
     font-size: 180%;
-    margin: 2rem 0;
+    margin: 20px 0;
     width: 90%;
     margin-left: 5%;
     text-align: center;
@@ -190,15 +195,22 @@ input[type=submit]{
 
 /*------------------PORTFOLIO---------------------------------*/
 .section-portfolio{
-    padding: 8rem 0;
     text-align: center;
     background-color: #f4f4f4;
 }
 .project{/*is the entire box*/
-    margin-top: 3rem;
+    margin-top: 30px;
 }
 .project__box{/*includes image and button's box*/
     position: relative;
+    text-align: center;
+}
+.project__box .heading-tertiary{
+    font-size: 200%;
+}
+
+.project__text-box{
+    margin-top: 15px;
 }
 .image__buttons-box{/*the box of the buttons*/
     position: absolute;
@@ -222,7 +234,7 @@ input[type=submit]{
 .project__img{
     width: 80%;
     height: auto;
-    padding: 1rem;
+    padding: 10px;
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -231,17 +243,14 @@ input[type=submit]{
 .image-links:link,
 .image-links:visited{
     display:block;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
     color:#fff;
 }
 /*---------CONTACT-----------------*/
-.section-contact{
-    padding: 8rem 0;
-}
 .form{
-    margin: 2rem auto;
+    margin: 20px auto;
     width:60%;
     font-size: 180%;
     /* text-align: center; */
@@ -256,35 +265,51 @@ textarea{
     border: 1px solid #ccc; 
 }
 textarea{
-    height: 10rem;
+    height: 100px;
 }
 *:focus{outline: none;}
-
+input[type=submit]{
+    display: inlne-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 300;
+    font-size: 110%;
+    border-radius: 200px;
+    transition: all .3s;
+}
+input[type=submit]:hover{
+    background-color: #3e1d4c;
+}
 /*-------FOOTER-------------------*/
-.footer{
-    padding: 4rem 0;
+.footer-section{
+    padding: 40px 0;
     background: #020102;
     font-size: 90%;
     color: #ddd;
-    margin-top: 3rem;
+    margin-top: 30px;
     text-align: center;
 }
+
+.social-links{/*the ul of the links*/}
+.footer-item{/*the li of the ul of the links*/}
+.footer-icons{}
 
 .social-links{
     list-style-type: none;
 }
 .social-links li{
     display: inline-block;
-    margin-bottom: -2rem;
-    margin-right: 2rem;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
 .social-links li a:link,
 .social-links li a:visited,
 .social-links li a:active{
-    transition: all 0.2s;
+    font-size: 500%;
+    transition: color  0.3s;
 }
 
 .social-links li a:hover{
-    transform: translateY(-100px);
+    color: #ba87d0;
 }
 

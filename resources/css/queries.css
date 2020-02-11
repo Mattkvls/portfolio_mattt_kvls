@@ -1,20 +1,128 @@
 /*big tablet to 1200px. our row is 1140px */
 @media only screen and (max-width:1200px){
-
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row{padding: 0 2%;}
 }
 /*will apply 768px -1023px. landscape view ipad 1024px */
 @media only screen and (max-width:1023px){
-
+    /*first thing to do is to change the overall font-size */
+    html{font-size: 57%;} 
+    .section{padding: 60px 0 ; 
+    }
+    .project__text-box .heading-tertiary{
+        margin-bottom: 1%;
+    }
+    .form{
+        width: 80%;
+    }
 }
 
 /*will apply 481px - 767px the width of ipad 768. all the phones smaller than the ipad*/
 @media only screen and (max-width:767px){
+    html{font-size: 40%;}
+    .profile-description,
+    .tech-description{font-size: 210%;}
+    .section{padding: 50px 0 ;} 
+    .row,.hero-text-box{padding: 0 4%;}
+    .col{
+        width: 100%;
+    }
+    .feature-box{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .project__img{
+        width: 60%;
+        height: auto;
+        padding: 1%;
+        padding-bottom: 5%;
+    }
+    .project__box:hover .image__buttons-box{
+        backface-visibility: hidden;
+        opacity: 1;
+    }
+    .project__text-box .heading-tertiary{
+        margin-bottom: 1%;
+    }
 
+
+    /*hide the navigation */
+    .nav-list{display: none;}
+    .heading-primary{font-size:400%;}
+    .heading-secondary{font-size:300%;}
+
+    .image__buttons-box{/*the box of the buttons*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,90%);
+        opacity: 1;
+    }
+    .image-links:link,
+    .image-links:visited{
+        display:inline-block;
+        font-size: 100%;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        background-color:#7a3a95;
+        border: 1px solid #7a3a95;
+        color:#fff;
+    }
+    .image__buttons-box{
+        padding-top: 1%;
+        margin-top: -1%;
+    }
+    .project__text-box .heading-tertiary{
+        margin-top: 10%;
+    } 
 }
 
 /*small phones 0-480px small iphones*/
 @media only screen and (max-width:480px){
+    .section{padding: 25px 0 ; 
+    }
+    .heading-primary,
+    .heading-secondary{
+        font-size: 300%;
+    }
+    .heading-tertiary{
+        font-size: 140%;
+    }
+    .footer-section{
+        padding: 30px 0;
+    }
+    .profile-pic{
+        margin-top: 8%;
+        margin-bottom: 10%;
+    }
+    .project{
+        margin-top: 5%;
+    }
+    .technologies{
+        margin-top:5%;
+    }
 
+    .project__box:hover .image__buttons-box{
+        backface-visibility: hidden;
+        transform:translate(0%,0%);
+        opacity: 1;
+    }
+    .project__img{
+        width: 60%;
+        height: auto;
+        padding: 1%;
+        padding-bottom: 5%;
+    }
+    .image__buttons-box{
+        margin-top: -5%;
+    }
+    .project__text-box .heading-tertiary{
+        margin-top: 10%;
+    } 
 }
 
 
