@@ -42,7 +42,8 @@
         padding-bottom: 5%;
     }
     .project__box:hover .image__buttons-box{
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         opacity: 1;
     }
     .project__text-box .heading-tertiary{
@@ -59,7 +60,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform:translate(-50%,90%);
+        -webkit-transform:translate(-50%,90%);
+                transform:translate(-50%,90%);
         opacity: 1;
     }
     .image-links:link,
@@ -107,8 +109,10 @@
     }
 
     .project__box:hover .image__buttons-box{
-        backface-visibility: hidden;
-        transform:translate(0%,0%);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transform:translate(0%,0%);
+                transform:translate(0%,0%);
         opacity: 1;
     }
     .project__img{

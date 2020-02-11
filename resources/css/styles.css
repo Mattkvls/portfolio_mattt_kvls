@@ -34,6 +34,7 @@ html{
 }
 /*-----------------------------------HEADER---------------------------------------*/
 .header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.4)),to(rgba(0,0,0,.4))), url(./img/jesus-kiteque-wn-KYaHwcis-unsplash\ \(1\).jpg);
     background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(./img/jesus-kiteque-wn-KYaHwcis-unsplash\ \(1\).jpg);
     height: 90vh;
     background-position: center;
@@ -45,7 +46,8 @@ html{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 .name-color{
     color: #7a3a95;
@@ -113,6 +115,7 @@ p{
     font-weight: 300;
     font-size: 200%;
     border-radius: 200px;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 .btn-full:link,
@@ -151,6 +154,7 @@ input[type=submit]{
     color: #fff;
     padding: 8px 0;
     border-bottom:2px solid transparent;
+    -webkit-transition: border-bottom .3s;
     transition: border-bottom .3s;
 }
 .nav-link:hover,
@@ -168,7 +172,8 @@ input[type=submit]{
     margin-left: 15%;
 }
 .profile-pic{
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     height: 150px;
     /* border-radius: 50%; */
     margin-bottom: 20px;
@@ -216,26 +221,34 @@ input[type=submit]{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,0%);
+    -webkit-transform:translate(-50%,0%);
+            transform:translate(-50%,0%);
     opacity: 0;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .project__box:hover .image__buttons-box{
-    backface-visibility: hidden;
-    transform:translate(-50%,-70%);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform:translate(-50%,-70%);
+            transform:translate(-50%,-70%);
     opacity: 1;
 }
 
 .project__box:hover .project__img{
-    transform: scale(1);
-    filter: blur(3px) brightness(80%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(3px) brightness(80%);
+            filter: blur(3px) brightness(80%);
 }
 .project__img{
     width: 80%;
     height: auto;
     padding: 10px;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -275,6 +288,7 @@ input[type=submit]{
     font-weight: 300;
     font-size: 110%;
     border-radius: 200px;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 input[type=submit]:hover{
@@ -306,6 +320,7 @@ input[type=submit]:hover{
 .social-links li a:visited,
 .social-links li a:active{
     font-size: 500%;
+    -webkit-transition: color  0.3s;
     transition: color  0.3s;
 }
 
