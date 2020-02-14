@@ -4,42 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="I'm a Front-End Developer in Stockholm, SE. I have serious passion for clean and modern design.">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
+    <link rel="stylesheet" href="./vendors/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">    
     <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">    
 
     <title>Matt Katsivelis | Frontend Developer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <nav class="nav">
             <div class="row">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">about</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+                <ul class="nav-list js--main-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <ion-icon class='nav-icon' size="large" name="menu"></ion-icon>
+                </a>
+                    <!-- <ion-icon name="close"></ion-icon> -->
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1 class="heading-primary">Hello, I'm <span class="name-color">Matt katsivelis</span>.<br>I'm a Junior Frontend Developer.</h1>
-            <a href="#" class="btn btn-full">learn more</a>
+            <h1 class="heading-primary"><span class="">Hello, I'm <span class="name-color">Matt katsivelis</span></span>.<br>I'm a Junior Frontend Developer.</h1>
+            <a href="#" class="btn btn-full js--scroll-to-about">learn more</a>
         </div>
     </header>
-    <section class="section section-about">
+    <section class="section section-about js--section-about" id="about">
         <div class="row">
             <h2 class="heading-secondary">About</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="profile-box">
                 <img class="profile-pic" src="./resources/img/me.jpeg" alt="profile picture">
               <p class="profile-description">I'm a selft taught front end developer with passion for clean and modern design. Being highly self-motivated, I have utilized many online sources including learning platforms like Udemy, Treehouse to acquire the fundamental knowledge for building websites. Untill now my main focus was HTML, CSS, JS and Bootstrap but I'm interested in learning React and bring to life interesting ideas and projects.I am currently seeking for job opportunities in the web development field.
               </p> 
             </div>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="technologies">
                 <div class="feature-box">
                     <div class="col span-1-of-3">
@@ -71,24 +89,24 @@
             </div>
         </div>
     </section>
-    <section class="section section-portfolio">
+    <section class="section section-portfolio" id="portfolio">
         <div class="row">
             <h2 class="heading-secondary">
                 Portfolio
             </h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-2">
             <div class="col span-1-of-2 port-box">
                 <div class="project">
                     <div class="project__box">
-                        <img src="./resources/img/Screenshot 2020-02-05 at 23.53.52.png" alt="project photo" class="project__img">
+                        <img src="./resources/img/projectPhoto.png" alt="project photo" class="project__img">
                         <div class="image__buttons-box">
-                            <a href=""class="btn image-links">View code</a>
+                            <a href="https://github.com/Mattkvls/nasa_Ajax_Project" class="btn image-links" target="new">View code</a>
                             <a href="" class="btn image-links">Live</a>
                         </div>
                         <div class="project__text-box">
                             <h3 class="heading-tertiary">NASA PROJECT</h3>
-                            <p class="project-text">I have used AJAX and blah blah blha nsectetur adipisicing elit.</p>
+                            <p class="project-text">This project is currently under construction but the code view is available. I have used es6 features and made ajax calls to NASA'S API to fetch data.</p>
                         </div>
                     </div>
                     <!-- <div class="project__text-box">
@@ -100,20 +118,20 @@
             </div>
         </div>
     </section>
-    <section class="section section-contact">
+    <section class="section section-contact" id="contact">
         <div class="row">
             <h2 class="heading-secondary">
                 contact
             </h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <form class="form" action="">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Your name please</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" id="name" name="name" placeholder="Enter name" reuired>
+                        <input type="text" id="name" name="name" placeholder="Enter name" required>
                     </div>
                 </div>
                 <div class="row">
@@ -153,7 +171,7 @@
                     </li>
                     <li class="footer-item">
                         <a href="https://www.linkedin.com/in/matthaios-katsivelis-840abb74/" target="new">
-                            <ion-icon  class="footer-icons"name="logo-linkedin"></ion-icon>
+                            <ion-icon  class="footer-icons" name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
                 </ul>
@@ -161,10 +179,10 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
     <script src="./resources/js/script.js"></script>
 </body>
 </html>

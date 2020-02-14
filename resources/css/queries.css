@@ -6,6 +6,33 @@
     }
     .row{padding: 0 2%;}
 }
+@media only screen and (min-width: 768px) {
+    .project__box:hover .image__buttons-box{
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transform:translate(-50%,-70%);
+                transform:translate(-50%,-70%);
+        opacity: 1;
+    }
+    
+    .project__box:hover .project__img{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(3px) brightness(80%);
+                filter: blur(3px) brightness(80%);
+    }
+    .image__buttons-box{/*the box of the buttons*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform:translate(-50%,0%);
+                transform:translate(-50%,0%);
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+ }
+
 /*will apply 768px -1023px. landscape view ipad 1024px */
 @media only screen and (max-width:1023px){
     /*first thing to do is to change the overall font-size */
@@ -30,6 +57,9 @@
     .col{
         width: 100%;
     }
+    .heading-secondary{
+        margin-bottom: 20px;
+    }
     .feature-box{
         display: inline-block;
         margin-top: 10px;
@@ -46,41 +76,88 @@
                 backface-visibility: hidden;
         opacity: 1;
     }
+    .project__text-box{
+        margin-top: 6%;
+    }
     .project__text-box .heading-tertiary{
         margin-bottom: 1%;
+        margin-top: 4%;
     }
 
-
-    /*hide the navigation */
-    .nav-list{display: none;}
+   
     .heading-primary{font-size:400%;}
     .heading-secondary{font-size:300%;}
 
-    .image__buttons-box{/*the box of the buttons*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform:translate(-50%,90%);
-                transform:translate(-50%,90%);
-        opacity: 1;
+    /*-------navigation switch-------------- */
+
+     /*hide the navigation */
+     .nav-list{
+         display: none;
+     }
+     .nav-list{
+         float: left;
+         margin-top: 35px;
+         margin-left: 25px;
+     }
+     .nav-item{
+         display: block;
+     }
+     /*style the links to the navigation*/
+     .nav-link:link,
+     .nav-link:visited{
+        display: block;
+        border: 0;/*dont need a border at mobile version*/
+        padding: 10px 0;
+        font-size: 250%;
+     }
+
+    /*make the mobile nav visible */
+    .mobile-nav-icon{
+        display:inline-block;
+        color: #ffff;
+        margin-top: 10px;
     }
+
+    .image__buttons-box{
+        display: block;
+        margin-top: -5%;
+        padding-top: 1%;
+    } 
     .image-links:link,
     .image-links:visited{
         display:inline-block;
-        font-size: 100%;
+        font-size: 180%;
         margin-left: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
         background-color:#7a3a95;
         border: 1px solid #7a3a95;
         color:#fff;
     }
-    .image__buttons-box{
-        padding-top: 1%;
-        margin-top: -1%;
+    .project__text-box{
+        margin-top: -4%;
     }
-    .project__text-box .heading-tertiary{
-        margin-top: 10%;
-    } 
+    .project-text{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .profile-pic{
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+/*-------------STICKY NAVIGATION-------------------*/
+
+    .sticky .nav-list{
+        margin: 10px 0;
+    }
+    .sticky .nav-link:link,
+    .sticky .nav-link:visited{
+        padding: 10px 0;
+        color: #555;
+    }
+    .sticky .mobile-nav-icon{
+        color: black;
+    }
 }
 
 /*small phones 0-480px small iphones*/
@@ -108,13 +185,6 @@
         margin-top:5%;
     }
 
-    .project__box:hover .image__buttons-box{
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        -webkit-transform:translate(0%,0%);
-                transform:translate(0%,0%);
-        opacity: 1;
-    }
     .project__img{
         width: 60%;
         height: auto;
@@ -123,11 +193,24 @@
     }
     .image__buttons-box{
         margin-top: -5%;
+        display: inline-block;
+        text-align: center;
+    }
+  
+    .project__text-box{
+        margin-top: -2%;
     }
     .project__text-box .heading-tertiary{
-        margin-top: 10%;
-    } 
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    .project-text{
+        width: 60%;
+        margin-left: 20%;
+    }
 }
 
 
 
+/*στα 650 κανε τα κουμπια στηλη και αναμεσα απο το κειμενο για μικροτερες οθονες */
+/* το κειμενο μεσα στα κουμπια στο portfolio ειναι μικρο δες να ανεβασεις γραμματοσειρα */
