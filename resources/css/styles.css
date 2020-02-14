@@ -49,7 +49,17 @@ html{
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
-    animation: leftToRight 1s ease-out;
+}
+.heading-primary-main,
+.heading-primary-sub{
+    display: block;
+}
+.heading-primary-main{
+    animation: moveInleft 1s ease-out;
+    backface-visibility: none;
+}
+.heading-primary-sub{
+    animation: moveInRight 1s ease-out;
     backface-visibility: none;
 }
 .name-color{
@@ -120,6 +130,11 @@ p{
     border-radius: 200px;
     -webkit-transition: all .3s;
     transition: all .3s;
+}
+.btn-full-animate:link,
+.btn-full-animate:visited{
+    animation: moveInBottom 1s ease-out 1s;
+    backface-visibility: hidden;
 }
 .btn-full:link,
 .btn-full:visited,
@@ -365,17 +380,44 @@ input[type=submit]:hover{
     opacity: 1;
 }
 /*----ANIMATIONS-----------*/
-@keyframes leftToRight{
+@keyframes moveInleft{
     0%{
-        transform: translateX(-20%);
+        /*how the animation will look before it starts*/
+        transform: translateX(-100px);
         opacity: 0;
     }
-    50%{
-        transform: translateX(10%);
-        opacity: 1;
+    80%{
+        transform: translateX(10px);
     }
     100%{
         transform: translateX(0);
         opacity: 1;
     }
+    /*generally animate only two properties maximum and opacity is the one */
+}
+@keyframes moveInRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        /*how the animation will look before it starts*/
+        transform: translateY(200px);
+        opacity: 0;
+    }
+  
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    /*generally animate only two properties maximum and opacity is the one */
 }
