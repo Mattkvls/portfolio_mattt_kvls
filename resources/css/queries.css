@@ -3,6 +3,7 @@
     .hero-text-box{
         width: 100%;
         padding: 0 2%;
+        padding-left: 3%;
     }
     .row{padding: 0 2%;}
 }
@@ -39,6 +40,9 @@
     html{font-size: 57%;} 
     .section{padding: 60px 0 ; 
     }
+    .hero-text-box{
+        padding-left: 5%;
+    }
     .project__text-box .heading-tertiary{
         margin-bottom: 1%;
     }
@@ -56,6 +60,9 @@
     .row,.hero-text-box{padding: 0 4%;}
     .col{
         width: 100%;
+    }
+    .hero-text-box{
+        padding-left: 5%;
     }
     .heading-secondary{
         margin-bottom: 20px;
