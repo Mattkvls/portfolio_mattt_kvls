@@ -350,8 +350,8 @@ textarea{
     height: 100px;
 }
 *:focus{outline: none;}
-.submit{
-    display: inlne-block;
+input[type=submit]{
+    display: inline-block;
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
     color:#fff;

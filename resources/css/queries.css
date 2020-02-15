@@ -49,19 +49,7 @@
     .form{
         width: 80%;
     }
-    .submit{
-        display: inlne-block;
-        background-color:#7a3a95;
-        border: 1px solid #7a3a95;
-        color:#fff;
-        text-decoration: none;
-        padding: 7px 15px;
-        font-weight: 300;
-        font-size: 100%;
-        border-radius: 200px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
-    }
+
 }
 
 /*will apply 481px - 767px the width of ipad 768. all the phones smaller than the ipad*/
@@ -193,19 +181,6 @@
         color:#fff;
         padding: 7px 15px;
     }
-    .submit{
-        display: inlne-block;
-        background-color:#7a3a95;
-        border: 1px solid #7a3a95;
-        color:#fff;
-        text-decoration: none;
-        padding: 7px 15px;
-        font-weight: 300;
-        font-size: 100%;
-        border-radius: 200px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
-    }
 }
 
 /*small phones 0-480px small iphones*/
@@ -255,19 +230,6 @@
     .project-text{
         width: 60%;
         margin-left: 20%;
-    }
-    .submit{
-        display: inlne-block;
-        background-color:#7a3a95;
-        border: 1px solid #7a3a95;
-        color:#fff;
-        text-decoration: none;
-        padding: 7px 15px;
-        font-weight: 300;
-        font-size: 100%;
-        border-radius: 200px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
     }
 }
 
