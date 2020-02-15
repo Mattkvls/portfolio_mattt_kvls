@@ -350,7 +350,7 @@ textarea{
     height: 100px;
 }
 *:focus{outline: none;}
-input[type=submit]{
+.submit{
     display: inlne-block;
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
