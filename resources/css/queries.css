@@ -61,6 +61,13 @@
     .col{
         width: 100%;
     }
+    .header{
+        background-attachment: fixed;
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
     .hero-text-box{
         padding-left: 5%;
     }
@@ -171,10 +178,10 @@
     .sticky .nav-link:link,
     .sticky .nav-link:visited{
         padding: 10px 0;
-        color: #555;
+        color: white;
     }
     .sticky .mobile-nav-icon{
-        color: black;
+        color: white;
     }
     .btn-full:link,
     .btn-full:visited,
@@ -221,7 +228,7 @@
     }
     .image__buttons-box{
         margin-top: -5%;
-        display: inline-block;
+        display:block;/*was inline-block*/
         text-align: center;
     }
   
