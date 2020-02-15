@@ -133,24 +133,33 @@ p{
 }
 .btn-full-animate:link,
 .btn-full-animate:visited{
-    animation: moveInBottom 1s ease-out 1s;
+    display: inline-block;
+    animation: moveInBottom .6s ease-out .75s;
+    animation-fill-mode: backwards;
     backface-visibility: hidden;
+    /* transition: all .2s; */
 }
+.btn-full-animate:hover,
+input[type=submit]:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-full-animate:active,
+input[type=submit]:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
 .btn-full:link,
 .btn-full:visited,
 .image-links:link,
 input[type=submit]{
-    color: #7a3a95;
-    border: 1px solid #7a3a95;
-    box-shadow: 0 4px 10px black;
-}
-.btn-full:hover,
-.btn-full:active,
-input[type=submit]{
+    display: inline-block;
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
     color:#fff;
-    transform: translateY(-10);
 }
 .image-links:hover,
 .image-links:active{
@@ -332,9 +341,6 @@ input[type=submit]{
     border-radius: 200px;
     -webkit-transition: all .3s;
     transition: all .3s;
-}
-input[type=submit]:hover{
-    background-color: #3e1d4c;
 }
 /*-------FOOTER-------------------*/
 .footer-section{
