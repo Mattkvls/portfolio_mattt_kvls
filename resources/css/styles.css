@@ -55,12 +55,16 @@ html{
     display: block;
 }
 .heading-primary-main{
-    animation: moveInleft 1s ease-out;
-    backface-visibility: none;
+    -webkit-animation: moveInleft 1s ease-out;
+            animation: moveInleft 1s ease-out;
+    -webkit-backface-visibility: none;
+            backface-visibility: none;
 }
 .heading-primary-sub{
-    animation: moveInRight 1s ease-out;
-    backface-visibility: none;
+    -webkit-animation: moveInRight 1s ease-out;
+            animation: moveInRight 1s ease-out;
+    -webkit-backface-visibility: none;
+            backface-visibility: none;
 }
 .name-color{
     color: #7a3a95;
@@ -134,19 +138,24 @@ p{
 .btn-full-animate:link,
 .btn-full-animate:visited{
     display: inline-block;
-    animation: moveInBottom .6s ease-out .75s;
-    animation-fill-mode: backwards;
-    backface-visibility: hidden;
+    -webkit-animation: moveInBottom .6s ease-out .75s;
+            animation: moveInBottom .6s ease-out .75s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     /* transition: all .2s; */
 }
 .btn-full-animate:hover,
 input[type=submit]:hover{
-    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .btn-full-animate:active,
 input[type=submit]:active{
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -386,43 +395,100 @@ input[type=submit]{
     opacity: 1;
 }
 /*----ANIMATIONS-----------*/
-@keyframes moveInleft{
+@-webkit-keyframes moveInleft{
     0%{
         /*how the animation will look before it starts*/
-        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
         opacity: 0;
     }
     80%{
-        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
     }
     100%{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
     /*generally animate only two properties maximum and opacity is the one */
 }
-@keyframes moveInRight{
+@keyframes moveInleft{
     0%{
-        transform: translateX(100px);
+        /*how the animation will look before it starts*/
+        -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
         opacity: 0;
     }
     80%{
-        transform: translateX(-10px);
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
     }
     100%{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+    /*generally animate only two properties maximum and opacity is the one */
+}
+@-webkit-keyframes moveInRight{
+    0%{
+        -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+        opacity: 0;
+    }
+    80%{
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }
-@keyframes moveInBottom{
+@keyframes moveInRight{
+    0%{
+        -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+        opacity: 0;
+    }
+    80%{
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes moveInBottom{
     0%{
         /*how the animation will look before it starts*/
-        transform: translateY(200px);
+        -webkit-transform: translateY(200px);
+                transform: translateY(200px);
         opacity: 0;
     }
   
     100%{
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+    /*generally animate only two properties maximum and opacity is the one */
+}
+@keyframes moveInBottom{
+    0%{
+        /*how the animation will look before it starts*/
+        -webkit-transform: translateY(200px);
+                transform: translateY(200px);
+        opacity: 0;
+    }
+  
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         opacity: 1;
     }
     /*generally animate only two properties maximum and opacity is the one */
