@@ -164,7 +164,7 @@ input[type=submit]:active{
 .btn-full:link,
 .btn-full:visited,
 .image-links:link,
-input[type=submit]{
+input[type=submit]:link{
     display: inline-block;
     background-color:#7a3a95;
     border: 1px solid #7a3a95;
@@ -382,6 +382,7 @@ input[type=submit]{
 .social-links li a:link,
 .social-links li a:visited,
 .social-links li a:active{
+    color: #7a3a95;
     font-size: 500%;
     -webkit-transition: color  0.3s;
     transition: color  0.3s;
