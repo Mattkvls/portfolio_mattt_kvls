@@ -11,8 +11,8 @@
     .project__box:hover .image__buttons-box{
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-        -webkit-transform:translate(-50%,-70%);
-                transform:translate(-50%,-70%);
+        -webkit-transform:translate(-50%,-105%);
+                transform:translate(-50%,-105%);
         opacity: 1;
     }
     
