@@ -354,7 +354,6 @@ input[type=submit]{
     display: inline-block;
     background-color: #7a3a95;
     border: none;
-    border: 1px solid #7a3a95;
     color:#fff;
     text-decoration: none;
     padding: 10px 30px;
