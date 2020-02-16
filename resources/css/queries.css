@@ -49,6 +49,14 @@
     .form{
         width: 80%;
     }
+    input[type=submit]{
+        display: inline-block;
+        background-color:#7a3a95;
+        border: 1px solid #7a3a95;
+        color:#fff;
+        text-decoration: none;
+        padding: 7px 15px;
+    }
 
 }
 
@@ -181,6 +189,14 @@
         color:#fff;
         padding: 7px 15px;
     }
+    input[type=submit]{
+        display: inline-block;
+        background-color:#7a3a95;
+        border: 1px solid #7a3a95;
+        color:#fff;
+        text-decoration: none;
+        padding: 7px 15px;
+    }
 }
 
 /*small phones 0-480px small iphones*/
@@ -230,6 +246,14 @@
     .project-text{
         width: 60%;
         margin-left: 20%;
+    }
+    input[type=submit]{
+        display: inline-block;
+        background-color:#7a3a95;
+        border: 1px solid #7a3a95;
+        color:#fff;
+        text-decoration: none;
+        padding: 7px 15px;
     }
 }
 
