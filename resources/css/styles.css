@@ -353,13 +353,14 @@ textarea{
 input[type=submit]{
     display: inline-block;
     background-color: #7a3a95;
-    border: none;
+    border: 0;
     color:#fff;
     text-decoration: none;
     padding: 10px 30px;
     font-weight: 300;
     font-size: 100%;
     border-radius: 200px;
+    -webkit-appearance: button;
     -webkit-transition: all .3s;
     transition: all .3s;
 }
